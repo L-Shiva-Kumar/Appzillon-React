@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders App Component 1`] = `
+<div>
+  This is a react app!
+</div>
+`;
+
+exports[`should render a div saying React App 1`] = `
+<div>
+  This is a react app!
+</div>
+`;
