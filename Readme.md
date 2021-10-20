@@ -24,7 +24,7 @@ npm i react react-dom axios redux redux-thunk react-redux redux-devtools-extensi
     "presets": ["@babel/preset-env", "@babel/preset-react"]
 }`
 8. Create a file named `webpack.config.js` and define the configure the rules
-`const path = require('path');
+```javascript const path = require('path');
  const HtmlWebpackPlugin = require('html-webpack-plugin');
 		
  module.exports = [
@@ -121,7 +121,7 @@ npm i react react-dom axios redux redux-thunk react-redux redux-devtools-extensi
 			}),
 		],
 	}
- ];`
+ ];```
 9. Add start and build into script tag of `package.json` for serving and building the react app
 `{
 	"start": "webpack serve --mode development",
