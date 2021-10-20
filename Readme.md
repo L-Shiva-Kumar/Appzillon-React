@@ -1,8 +1,11 @@
 # Environment and Project Setup
 
 	1. Install Node JS
-	2. Create a folder, cmd - ```bash mkdir <folder-name> ```
-	3. Inside the folder run cmd - ```bash npm init ``` (to create a project with meta-data like name, description, author, etc...)
+	2. Create a folder, cmd - ```bash 
+	mkdir <folder-name> 
+	```
+	3. Inside the folder run cmd - ```bash 
+	npm init ``` (to create a project with meta-data like name, description, author, etc...)
 	4. Install React Dev Depenencies, run cmd - ```bash npm i -D @babel/cli @babel/core @babel/preset-env @babel/preset-react babel-loader
 	style-loader css-loader sass sass-loader webpack webpack-cli webpack-dev-server@3.11.1 html-webpack-plugin jest enzyme babel-jest react-test-renderer ```
 	5. Install React Dependencies, run cmd - ```bash npm i react react-dom axios redux redux-thunk react-redux redux-devtools-extension ```
