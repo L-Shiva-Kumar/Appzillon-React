@@ -1,11 +1,10 @@
 # Environment and Project Setup
 
-```bash
-git rm --cached config/default.json
-```
-
 	1. Install Node JS
 	2. Create a folder, cmd - 
+	```bash
+git rm --cached config/default.json
+```
 	```bash 
 	mkdir <folder-name> 
 	```
