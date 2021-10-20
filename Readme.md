@@ -24,8 +24,9 @@ npm i react react-dom axios redux redux-thunk react-redux redux-devtools-extensi
     "presets": ["@babel/preset-env", "@babel/preset-react"]
 }`
 8. Create a file named `webpack.config.js` and define the configure the rules
-```javascript const path = require('path');
- const HtmlWebpackPlugin = require('html-webpack-plugin');
+```javascript 
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 		
  module.exports = [
 	{
@@ -121,36 +122,36 @@ npm i react react-dom axios redux redux-thunk react-redux redux-devtools-extensi
 			}),
 		],
 	}
- ];```
+ ] 
+ ```
 9. Add start and build into script tag of `package.json` for serving and building the react app
 `{
 	"start": "webpack serve --mode development",
 	"build": "webpack --mode production"
 }`
 10. Create a file named `index.html` in src folder and copy the delow code
-`<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 </head>
-
 <body>
 	<div id="root">
-
 	</div>
 </body>
-
-</html>`
+</html>
+```
 11. Create a file named `index.js` in `src` folder and copy the below code.
-`import React from 'react';
+```javascript
+import React from 'react';
 import ReactDom from 'react-dom';
 
-ReactDom.render(<div>This is a react app</div>, document.getElementById('root'))`
-
+ReactDom.render(<div>This is a react app</div>, document.getElementById('root'))
+```
 Note: Replace the Div tag and it's content by placing a component there
 12. open cmd and navigate to the above folder and then run cmd - 
 ```bash 
@@ -174,10 +175,16 @@ anywhere inside the `package.json` object to serialize the snapshots
 			import Adapter from 'enzyme-adapter-react-16';
 			configure({ adapter: new Adapter() });`
 		and also add this script inside the "jest" script after "snapshotSerializers" in `package.json` - `"setupFilesAfterEnv": ["<rootDir>src/setupTests.js"]`
-16. To run tests just run the cmd - ```bash npm run test ```
+16. To run tests just run the cmd - 
+```bash 
+npm run test 
+```
 17. Jest will look for tests in any of the following places:
 			Files with `.js` suffix in `__tests__` folders.
 			Files with `.test.js` suffix.
 			Files with `.spec.js` suffix.
 		Hence, naming and arranging files is upto your convenient convention
-18. Jest Creates the snapshots only once, if you wanted to update the snapshots then run cmd - ```bash npm run test -- ```
+18. Jest Creates the snapshots only once, if you wanted to update the snapshots then run cmd - 
+```bash 
+npm run test -- 
+```
