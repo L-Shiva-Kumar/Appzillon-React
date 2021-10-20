@@ -1,7 +1,8 @@
 # Environment and Project Setup
 
 	1. Install Node JS
-	2. Create a folder, cmd - ```bash 
+	2. Create a folder, cmd - 
+	```bash 
 	mkdir <folder-name> 
 	```
 	3. Inside the folder run cmd - ```bash 
